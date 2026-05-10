@@ -1,0 +1,278 @@
+cat > /home/claude/portfolio/concerts.html << 'HTMLEOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Concert Photography — Khaled Md Raihan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar scrolled">
+  <a href="index.html" class="nav-brand">
+    <span class="nav-brand-name">RAIHAN</span>
+    <span class="nav-brand-sub">Visual Storyteller</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="concerts.html" class="active">Concert</a></li>
+    <li><a href="cinematography.html">Cinematography</a></li>
+    <li><a href="works.html">Works</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+</nav>
+<nav class="nav-overlay" id="nav-overlay">
+  <a href="index.html">Home</a><a href="concerts.html">Concert</a><a href="cinematography.html">Cinematography</a><a href="works.html">Works</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg">
+    <svg width="100%" height="100%" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <rect width="1200" height="600" fill="#0a0015"/>
+      <defs>
+        <radialGradient id="ph1" cx="50%" cy="100%" r="80%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.6"/><stop offset="100%" stop-color="#05050b"/></radialGradient>
+        <radialGradient id="ph2" cx="20%" cy="50%" r="40%"><stop offset="0%" stop-color="#22d3ee" stop-opacity="0.15"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+      </defs>
+      <rect width="1200" height="600" fill="url(#ph1)"/>
+      <rect width="1200" height="600" fill="url(#ph2)"/>
+      <line x1="600" y1="0" x2="200" y2="600" stroke="#f97316" stroke-width="80" opacity="0.06"/>
+      <line x1="600" y1="0" x2="1000" y2="600" stroke="#7c3aed" stroke-width="80" opacity="0.06"/>
+      <line x1="600" y1="0" x2="600" y2="600" stroke="#fff" stroke-width="40" opacity="0.03"/>
+      <rect x="0" y="480" width="1200" height="120" fill="linear-gradient(transparent,#05050b)"/>
+      <rect x="0" y="480" width="1200" height="120" fill="#05050b" opacity="0.6"/>
+      <!-- Stage silhouette -->
+      <rect x="300" y="350" width="600" height="10" rx="5" fill="#fff" opacity="0.08"/>
+      <!-- Mic stand -->
+      <rect x="595" y="200" width="10" height="150" rx="5" fill="#fff" opacity="0.12"/>
+      <ellipse cx="600" cy="195" rx="18" ry="25" fill="#fff" opacity="0.15"/>
+    </svg>
+    <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,var(--bg) 100%)"></div>
+  </div>
+  <div class="page-hero-content">
+    <p class="page-hero-label">Live Events & Performances</p>
+    <h1 class="page-hero-title">CONCERT<br>PHOTOGRAPHY</h1>
+    <p class="page-hero-sub">Capturing the electricity of live music</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">Featured Artists</p>
+      <h2 class="section-title">Live <span>Sessions</span></h2>
+      <p class="section-subtitle">From Bangladesh's biggest stages to intimate venues — every frame tells the story of a moment that can never be replayed.</p>
+    </div>
+
+    <div class="artist-grid">
+
+      <!-- Artcell -->
+      <div class="artist-card reveal" onclick="openArtistGallery('artcell')">
+        <div class="artist-card-bg">
+          <svg width="100%" height="100%" viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <rect width="300" height="450" fill="#12001f"/>
+            <defs><radialGradient id="ag1" cx="50%" cy="80%" r="80%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.8"/><stop offset="100%" stop-color="#05050b"/></radialGradient></defs>
+            <rect width="300" height="450" fill="url(#ag1)"/>
+            <line x1="150" y1="0" x2="60" y2="360" stroke="#f97316" stroke-width="60" opacity="0.07"/>
+            <line x1="150" y1="0" x2="240" y2="360" stroke="#7c3aed" stroke-width="60" opacity="0.07"/>
+            <ellipse cx="150" cy="240" rx="25" ry="80" fill="#fff" opacity="0.18"/>
+            <rect x="0" y="380" width="300" height="70" fill="#05050b" opacity="0.85"/>
+            <g fill="#05050b" opacity="0.85"><ellipse cx="25" cy="382" rx="12" ry="16"/><ellipse cx="60" cy="378" rx="11" ry="19"/><ellipse cx="95" cy="383" rx="13" ry="15"/><ellipse cx="130" cy="376" rx="14" ry="21"/><ellipse cx="165" cy="382" rx="11" ry="16"/><ellipse cx="200" cy="378" rx="12" ry="18"/><ellipse cx="235" cy="383" rx="10" ry="15"/><ellipse cx="270" cy="380" rx="11" ry="17"/></g>
+            <g fill="#fff"><circle cx="50" cy="50" r="2" opacity="0.7"/><circle cx="220" cy="80" r="1.5" opacity="0.5"/><circle cx="100" cy="30" r="1" opacity="0.6"/><circle cx="270" cy="120" r="2" opacity="0.4"/></g>
+          </svg>
+        </div>
+        <div class="artist-card-info">
+          <h3 class="artist-name">ARTCELL</h3>
+          <p class="artist-meta">Rock · Progressive</p>
+          <p class="artist-count">12 Events Covered</p>
+        </div>
+      </div>
+
+      <!-- Tahsan -->
+      <div class="artist-card reveal reveal-delay-1" onclick="openArtistGallery('tahsan')">
+        <div class="artist-card-bg">
+          <svg width="100%" height="100%" viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <rect width="300" height="450" fill="#05101a"/>
+            <defs><radialGradient id="ag2" cx="50%" cy="60%" r="70%"><stop offset="0%" stop-color="#22d3ee" stop-opacity="0.5"/><stop offset="100%" stop-color="#05050b"/></radialGradient></defs>
+            <rect width="300" height="450" fill="url(#ag2)"/>
+            <circle cx="150" cy="220" r="100" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.25"/>
+            <circle cx="150" cy="220" r="70" fill="none" stroke="#22d3ee" stroke-width="0.5" opacity="0.35"/>
+            <ellipse cx="150" cy="200" rx="20" ry="60" fill="#fff" opacity="0.2"/>
+            <rect x="0" y="390" width="300" height="60" fill="#05050b" opacity="0.9"/>
+            <g fill="#05050b" opacity="0.85"><ellipse cx="30" cy="392" rx="12" ry="16"/><ellipse cx="70" cy="389" rx="11" ry="18"/><ellipse cx="110" cy="393" rx="13" ry="15"/><ellipse cx="150" cy="387" rx="14" ry="20"/><ellipse cx="190" cy="392" rx="11" ry="16"/><ellipse cx="230" cy="389" rx="12" ry="17"/><ellipse cx="268" cy="392" rx="10" ry="15"/></g>
+          </svg>
+        </div>
+        <div class="artist-card-info">
+          <h3 class="artist-name">TAHSAN</h3>
+          <p class="artist-meta">Pop · Contemporary</p>
+          <p class="artist-count">8 Events Covered</p>
+        </div>
+      </div>
+
+      <!-- Rahat Fateh Ali Khan -->
+      <div class="artist-card reveal reveal-delay-2" onclick="openArtistGallery('rahat')">
+        <div class="artist-card-bg">
+          <svg width="100%" height="100%" viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <rect width="300" height="450" fill="#180520"/>
+            <defs><radialGradient id="ag3" cx="50%" cy="70%" r="80%"><stop offset="0%" stop-color="#a855f7" stop-opacity="0.8"/><stop offset="100%" stop-color="#05050b"/></radialGradient></defs>
+            <rect width="300" height="450" fill="url(#ag3)"/>
+            <line x1="150" y1="0" x2="30" y2="400" stroke="#f97316" stroke-width="70" opacity="0.07"/>
+            <line x1="150" y1="0" x2="270" y2="400" stroke="#7c3aed" stroke-width="70" opacity="0.07"/>
+            <ellipse cx="150" cy="240" rx="28" ry="85" fill="#fff" opacity="0.2"/>
+            <rect x="0" y="390" width="300" height="60" fill="#05050b" opacity="0.9"/>
+            <g fill="#05050b" opacity="0.85"><ellipse cx="25" cy="392" rx="12" ry="16"/><ellipse cx="62" cy="388" rx="11" ry="20"/><ellipse cx="100" cy="393" rx="13" ry="15"/><ellipse cx="138" cy="386" rx="15" ry="22"/><ellipse cx="175" cy="392" rx="11" ry="16"/><ellipse cx="212" cy="388" rx="12" ry="18"/><ellipse cx="248" cy="393" rx="10" ry="14"/><ellipse cx="282" cy="390" rx="11" ry="17"/></g>
+            <g fill="#fff"><circle cx="60" cy="60" r="2" opacity="0.7"/><circle cx="250" cy="40" r="1.5" opacity="0.6"/><circle cx="40" cy="180" r="1" opacity="0.5"/></g>
+          </svg>
+        </div>
+        <div class="artist-card-info">
+          <h3 class="artist-name">RAHAT FATEH<br>ALI KHAN</h3>
+          <p class="artist-meta">Sufi · Qawwali</p>
+          <p class="artist-count">5 Events Covered</p>
+        </div>
+      </div>
+
+      <!-- Shironamhin -->
+      <div class="artist-card reveal reveal-delay-3" onclick="openArtistGallery('shiro')">
+        <div class="artist-card-bg">
+          <svg width="100%" height="100%" viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <rect width="300" height="450" fill="#001510"/>
+            <defs><radialGradient id="ag4" cx="50%" cy="80%" r="70%"><stop offset="0%" stop-color="#10b981" stop-opacity="0.5"/><stop offset="100%" stop-color="#05050b"/></radialGradient></defs>
+            <rect width="300" height="450" fill="url(#ag4)"/>
+            <!-- Guitar silhouette suggestion -->
+            <ellipse cx="150" cy="290" rx="45" ry="55" fill="#0d1a12" stroke="#10b981" stroke-width="1" opacity="0.4"/>
+            <ellipse cx="150" cy="200" rx="28" ry="35" fill="#0d1a12" stroke="#10b981" stroke-width="1" opacity="0.4"/>
+            <rect x="147" y="90" width="6" height="115" fill="#10b981" opacity="0.3"/>
+            <g stroke="#10b981" stroke-width="0.5" opacity="0.3">
+              <line x1="120" y1="290" x2="180" y2="290"/>
+              <line x1="118" y1="278" x2="182" y2="278"/>
+              <line x1="116" y1="304" x2="184" y2="304"/>
+            </g>
+            <rect x="0" y="390" width="300" height="60" fill="#05050b" opacity="0.9"/>
+            <g fill="#05050b" opacity="0.85"><ellipse cx="30" cy="392" rx="12" ry="16"/><ellipse cx="70" cy="388" rx="11" ry="19"/><ellipse cx="110" cy="393" rx="13" ry="15"/><ellipse cx="150" cy="386" rx="14" ry="21"/><ellipse cx="190" cy="392" rx="11" ry="16"/><ellipse cx="230" cy="388" rx="12" ry="18"/><ellipse cx="268" cy="392" rx="10" ry="15"/></g>
+          </svg>
+        </div>
+        <div class="artist-card-info">
+          <h3 class="artist-name">SHIRONAMHIN</h3>
+          <p class="artist-meta">Alternative Rock</p>
+          <p class="artist-count">9 Events Covered</p>
+        </div>
+      </div>
+
+      <!-- Warfaze -->
+      <div class="artist-card reveal" onclick="openArtistGallery('warfaze')">
+        <div class="artist-card-bg">
+          <svg width="100%" height="100%" viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <rect width="300" height="450" fill="#150500"/>
+            <defs><radialGradient id="ag5" cx="50%" cy="70%" r="80%"><stop offset="0%" stop-color="#f97316" stop-opacity="0.6"/><stop offset="100%" stop-color="#05050b"/></radialGradient></defs>
+            <rect width="300" height="450" fill="url(#ag5)"/>
+            <line x1="150" y1="0" x2="0" y2="450" stroke="#f97316" stroke-width="100" opacity="0.05"/>
+            <line x1="150" y1="0" x2="300" y2="450" stroke="#f97316" stroke-width="100" opacity="0.05"/>
+            <ellipse cx="150" cy="240" rx="26" ry="78" fill="#fff" opacity="0.17"/>
+            <!-- Drum kit suggestion -->
+            <ellipse cx="90" cy="330" rx="35" ry="20" fill="none" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+            <ellipse cx="210" cy="330" rx="35" ry="20" fill="none" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+            <ellipse cx="150" cy="370" rx="45" ry="25" fill="none" stroke="#f97316" stroke-width="1.5" opacity="0.25"/>
+            <rect x="0" y="400" width="300" height="50" fill="#05050b" opacity="0.9"/>
+            <g fill="#05050b" opacity="0.85"><ellipse cx="25" cy="402" rx="12" ry="14"/><ellipse cx="65" cy="399" rx="11" ry="17"/><ellipse cx="105" cy="403" rx="13" ry="14"/><ellipse cx="145" cy="397" rx="14" ry="19"/><ellipse cx="185" cy="402" rx="11" ry="15"/><ellipse cx="225" cy="399" rx="12" ry="17"/><ellipse cx="265" cy="402" rx="10" ry="14"/></g>
+          </svg>
+        </div>
+        <div class="artist-card-info">
+          <h3 class="artist-name">WARFAZE</h3>
+          <p class="artist-meta">Heavy Metal · Rock</p>
+          <p class="artist-count">7 Events Covered</p>
+        </div>
+      </div>
+
+      <!-- Anupam Roy -->
+      <div class="artist-card reveal reveal-delay-1" onclick="openArtistGallery('anupam')">
+        <div class="artist-card-bg">
+          <svg width="100%" height="100%" viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <rect width="300" height="450" fill="#080515"/>
+            <defs><radialGradient id="ag6" cx="50%" cy="60%" r="70%"><stop offset="0%" stop-color="#6366f1" stop-opacity="0.5"/><stop offset="100%" stop-color="#05050b"/></radialGradient></defs>
+            <rect width="300" height="450" fill="url(#ag6)"/>
+            <circle cx="150" cy="210" r="90" fill="none" stroke="#6366f1" stroke-width="1" opacity="0.2"/>
+            <circle cx="150" cy="210" r="60" fill="none" stroke="#6366f1" stroke-width="0.5" opacity="0.3"/>
+            <ellipse cx="150" cy="195" rx="22" ry="65" fill="#fff" opacity="0.18"/>
+            <rect x="0" y="390" width="300" height="60" fill="#05050b" opacity="0.9"/>
+            <g fill="#05050b" opacity="0.85"><ellipse cx="30" cy="392" rx="12" ry="16"/><ellipse cx="68" cy="388" rx="11" ry="19"/><ellipse cx="108" cy="393" rx="13" ry="15"/><ellipse cx="148" cy="386" rx="14" ry="21"/><ellipse cx="188" cy="392" rx="11" ry="16"/><ellipse cx="228" cy="388" rx="12" ry="18"/><ellipse cx="266" cy="392" rx="10" ry="15"/></g>
+            <g fill="#fff"><circle cx="50" cy="70" r="1.5" opacity="0.6"/><circle cx="250" cy="50" r="2" opacity="0.5"/><circle cx="80" cy="150" r="1" opacity="0.4"/><circle cx="270" cy="180" r="1.5" opacity="0.3"/></g>
+          </svg>
+        </div>
+        <div class="artist-card-info">
+          <h3 class="artist-name">ANUPAM ROY</h3>
+          <p class="artist-meta">Indie · Folk Pop</p>
+          <p class="artist-count">6 Events Covered</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Full gallery sample -->
+    <div class="divider"></div>
+    <div class="section-header reveal text-center">
+      <p class="section-label">Recent Shots</p>
+      <h2 class="section-title">From the <span>Pit</span></h2>
+    </div>
+    <div class="gallery-scroll reveal">
+      <div class="gallery-item" data-lightbox data-caption="Stage energy — front pit view"><svg class="gallery-item-bg" viewBox="0 0 260 350" preserveAspectRatio="xMidYMid slice" width="260" height="350"><rect width="260" height="350" fill="#0a0018"/><defs><radialGradient id="rs1" cx="50%" cy="80%" r="80%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.8"/><stop offset="100%" stop-color="#05050b"/></radialGradient></defs><rect width="260" height="350" fill="url(#rs1)"/><line x1="130" y1="0" x2="50" y2="260" stroke="#f97316" stroke-width="40" opacity="0.09"/><line x1="130" y1="0" x2="210" y2="260" stroke="#22d3ee" stroke-width="30" opacity="0.07"/><ellipse cx="130" cy="190" rx="22" ry="65" fill="#fff" opacity="0.2"/><rect x="0" y="290" width="260" height="60" fill="#05050b" opacity="0.85"/><g fill="#05050b"><ellipse cx="20" cy="292" rx="10" ry="14"/><ellipse cx="52" cy="289" rx="9" ry="17"/><ellipse cx="84" cy="293" rx="11" ry="13"/><ellipse cx="116" cy="287" rx="12" ry="18"/><ellipse cx="148" cy="292" rx="9" ry="14"/><ellipse cx="180" cy="289" rx="11" ry="16"/><ellipse cx="212" cy="293" rx="8" ry="13"/><ellipse cx="244" cy="290" rx="9" ry="15"/></g></svg><div class="gallery-item-info"><p class="gallery-item-title">Stage Energy — Front Pit</p></div></div>
+      <div class="gallery-item" data-lightbox data-caption="Crowd reaction — Dhaka Stadium"><svg class="gallery-item-bg" viewBox="0 0 260 350" preserveAspectRatio="xMidYMid slice" width="260" height="350"><rect width="260" height="350" fill="#050b18"/><defs><radialGradient id="rs2" cx="50%" cy="40%" r="70%"><stop offset="0%" stop-color="#22d3ee" stop-opacity="0.5"/><stop offset="100%" stop-color="#05050b"/></radialGradient></defs><rect width="260" height="350" fill="url(#rs2)"/><g fill="#fff" opacity="0.08"><rect x="0" y="180" width="260" height="4"/><rect x="0" y="220" width="260" height="3"/><rect x="0" y="255" width="260" height="3"/><rect x="0" y="285" width="260" height="2"/></g><g fill="#fff" opacity="0.06"><rect x="30" y="180" width="4" height="120"/><rect x="70" y="180" width="3" height="120"/><rect x="110" y="180" width="4" height="120"/><rect x="150" y="180" width="3" height="120"/><rect x="190" y="180" width="4" height="120"/><rect x="228" y="180" width="3" height="120"/></g><circle cx="130" cy="120" r="60" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.3"/><ellipse cx="130" cy="105" rx="16" ry="45" fill="#fff" opacity="0.18"/></svg><div class="gallery-item-info"><p class="gallery-item-title">Crowd Reaction — Dhaka Stadium</p></div></div>
+      <div class="gallery-item" data-lightbox data-caption="Guitar close-up — long exposure"><svg class="gallery-item-bg" viewBox="0 0 260 350" preserveAspectRatio="xMidYMid slice" width="260" height="350"><rect width="260" height="350" fill="#180520"/><defs><radialGradient id="rs3" cx="50%" cy="60%" r="70%"><stop offset="0%" stop-color="#a855f7" stop-opacity="0.7"/><stop offset="100%" stop-color="#05050b"/></radialGradient></defs><rect width="260" height="350" fill="url(#rs3)"/><ellipse cx="130" cy="220" rx="55" ry="65" fill="#1a0533" stroke="#a855f7" stroke-width="1" opacity="0.5"/><ellipse cx="130" cy="130" rx="34" ry="42" fill="#1a0533" stroke="#a855f7" stroke-width="1" opacity="0.5"/><rect x="127" y="30" width="6" height="102" fill="#a855f7" opacity="0.35"/><g stroke="#a855f7" stroke-width="0.7" opacity="0.4"><line x1="100" y1="220" x2="160" y2="220"/><line x1="98" y1="208" x2="162" y2="208"/><line x1="96" y1="232" x2="164" y2="232"/><line x1="94" y1="244" x2="166" y2="244"/></g></svg><div class="gallery-item-info"><p class="gallery-item-title">Guitar Close-up — Long Exposure</p></div></div>
+      <div class="gallery-item" data-lightbox data-caption="Vocalist silhouette — backlit"><svg class="gallery-item-bg" viewBox="0 0 260 350" preserveAspectRatio="xMidYMid slice" width="260" height="350"><rect width="260" height="350" fill="#150500"/><defs><radialGradient id="rs4" cx="50%" cy="80%" r="80%"><stop offset="0%" stop-color="#f97316" stop-opacity="0.7"/><stop offset="100%" stop-color="#05050b"/></radialGradient></defs><rect width="260" height="350" fill="url(#rs4)"/><ellipse cx="130" cy="200" rx="30" ry="90" fill="#05050b" opacity="0.9"/><ellipse cx="130" cy="100" rx="22" ry="25" fill="#05050b" opacity="0.9"/><circle cx="130" cy="200" r="100" fill="none" stroke="#f97316" stroke-width="30" opacity="0.06"/></svg><div class="gallery-item-info"><p class="gallery-item-title">Vocalist Silhouette — Backlit</p></div></div>
+      <div class="gallery-item" data-lightbox data-caption="Drum kit — motion blur"><svg class="gallery-item-bg" viewBox="0 0 260 350" preserveAspectRatio="xMidYMid slice" width="260" height="350"><rect width="260" height="350" fill="#080515"/><defs><radialGradient id="rs5" cx="50%" cy="60%" r="70%"><stop offset="0%" stop-color="#6366f1" stop-opacity="0.5"/><stop offset="100%" stop-color="#05050b"/></radialGradient></defs><rect width="260" height="350" fill="url(#rs5)"/><ellipse cx="80" cy="230" rx="40" ry="24" fill="none" stroke="#6366f1" stroke-width="1.5" opacity="0.4"/><ellipse cx="180" cy="230" rx="40" ry="24" fill="none" stroke="#6366f1" stroke-width="1.5" opacity="0.4"/><ellipse cx="130" cy="275" rx="55" ry="30" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.3"/><ellipse cx="50" cy="180" rx="22" ry="14" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.35"/><ellipse cx="210" cy="180" rx="22" ry="14" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.35"/><line x1="130" y1="80" x2="90" y2="230" stroke="#6366f1" stroke-width="3" opacity="0.2"/><line x1="130" y1="80" x2="170" y2="230" stroke="#6366f1" stroke-width="3" opacity="0.2"/></svg><div class="gallery-item-info"><p class="gallery-item-title">Drum Kit — Motion Blur</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" style="background:var(--bg-card);border-top:1px solid var(--border)">
+  <div class="container">
+    <h2 class="section-title reveal">Book Concert <span>Coverage</span></h2>
+    <div class="cta-line reveal"></div>
+    <p class="section-subtitle reveal" style="margin:0 auto 40px">Planning a concert or music event? Let's discuss how we can capture every electrifying moment.</p>
+    <a href="contact.html" class="btn btn-primary reveal">Get in Touch →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-name">RAIHAN</div>
+  <p class="footer-tagline">Photographer · Cinematographer · Visual Storyteller</p>
+  <nav class="footer-links"><a href="index.html">Home</a><a href="concerts.html">Concert</a><a href="cinematography.html">Cinematography</a><a href="works.html">Works</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+  <p class="footer-copy">© 2025 Khaled Md Raihan. All rights reserved.</p>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">✕</button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev">‹</button>
+  <button class="lightbox-nav lightbox-next" id="lightbox-next">›</button>
+  <div class="lightbox-content"><img id="lightbox-img" src="" alt=""></div>
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+<script src="script.js"></script>
+<script>
+document.getElementById('nav-toggle').addEventListener('click', function() {
+  this.classList.toggle('open');
+  const ov = document.getElementById('nav-overlay');
+  const isOpen = this.classList.contains('open');
+  ov.style.display = 'flex';
+  requestAnimationFrame(() => ov.classList.toggle('open', isOpen));
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+  if (!isOpen) setTimeout(() => { if (!ov.classList.contains('open')) ov.style.display = 'none'; }, 300);
+  ov.querySelectorAll('a').forEach((a, i) => a.style.transitionDelay = isOpen ? `${i * 0.07}s` : '0s');
+});
+document.getElementById('nav-overlay').querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  document.getElementById('nav-toggle').classList.remove('open');
+  const ov = document.getElementById('nav-overlay');
+  ov.classList.remove('open');
+  document.body.style.overflow = '';
+  setTimeout(() => { ov.style.display = 'none'; }, 300);
+}));
+function openArtistGallery(artist) { /* Future: open filtered gallery */ }
+</script>
+</body>
+</html>
+HTMLEOF
+echo "concerts.html done"
