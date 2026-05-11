@@ -11,7 +11,7 @@
   const ADMIN_PASSWORD    = 'kmr2025admin';     // <-- change this
   const ADMIN_SESSION_KEY = 'kmr_admin_auth';
   const STORAGE_PREFIX    = 'kmr_gallery_';
-  const MAX_SIZE_MB       = 8;
+  const MAX_SIZE_MB       = 30;
   const ACCEPTED          = ['image/jpeg','image/jpg','image/png','image/webp','image/gif'];
 
   // ── Auth ──────────────────────────────────────────────────
