@@ -39,6 +39,17 @@ cat > /home/claude/portfolio/works.html << 'HTMLEOF'
     </div>
   </div>
 
+  <!-- works quick-jump sidebar -->
+  <div style="position:fixed;bottom:6.5rem;left:.75rem;z-index:500;display:flex;flex-direction:column;gap:.35rem;" id="artistJump">
+    <div style="font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);padding:0 .25rem;margin-bottom:.1rem;">Jump to</div>
+    <a href="#brand"   style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(249,115,22,.1);border:1px solid rgba(249,115,22,.2);color:var(--text);">Brand</a>
+    <a href="#lifestyle"   style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(168,85,247,.1);border:1px solid rgba(168,85,247,.2);color:var(--text);">Lifestyle</a>
+    <a href="#portraits" style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.2);color:var(--text);">Portraits</a>
+    <a href="#corporate"  style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.2);color:var(--text);">Corporate</a>
+    <a href="#product" style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.3);color:var(--text);">Product</a>
+    
+  </div>
+
   <!-- BRAND CAMPAIGNS -->
   <section id="brand">
     <div class="section-header reveal">
