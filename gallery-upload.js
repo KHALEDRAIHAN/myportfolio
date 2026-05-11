@@ -528,7 +528,7 @@
     injectCSS();
 
     // Check if the current filename is works.html
-    const isWorksPage = window.location.pathname.includes('works.html');
+    const isWorksPage = window.location.pathname.includes('concerts.html');
     
     // Only show the 🔒 lock icon if we are on the Works page
     if (isWorksPage) {
