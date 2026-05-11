@@ -42,49 +42,16 @@ cat > /home/claude/portfolio/works.html << 'HTMLEOF'
   <!-- works quick-jump sidebar -->
   <div style="position:fixed;bottom:6.5rem;left:.75rem;z-index:500;display:flex;flex-direction:column;gap:.35rem;" id="artistJump">
     <div style="font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);padding:0 .25rem;margin-bottom:.1rem;">Jump to</div>
-    <a href="#brand"   style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(249,115,22,.1);border:1px solid rgba(249,115,22,.2);color:var(--text);">Brand</a>
+    
     <a href="#lifestyle"   style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(168,85,247,.1);border:1px solid rgba(168,85,247,.2);color:var(--text);">Lifestyle</a>
     <a href="#portraits" style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.2);color:var(--text);">Portraits</a>
     <a href="#corporate"  style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.2);color:var(--text);">Corporate</a>
+    <a href="#brand"   style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(249,115,22,.1);border:1px solid rgba(249,115,22,.2);color:var(--text);">Brand</a>
     <a href="#product" style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.3);color:var(--text);">Product</a>
     
   </div>
 
-  <!-- BRAND CAMPAIGNS -->
-  <section id="brand">
-    <div class="section-header reveal">
-      <div class="section-eyebrow" style="color:var(--purple-light);">Brand Work</div>
-      <h2 class="section-title">Brand <span>Campaigns</span></h2>
-      <p class="section-desc">Full campaigns for leading Bangladeshi and international brands — from concept to final delivery.</p>
-    </div>
-    <div data-upload-gallery="works-brand" data-gallery-label="Brand Campaigns"></div>
-  </section>
 
-  <div class="divider" style="margin:0 1.5rem;"></div>
-
-  <!-- CORPORATE EVENTS -->
-  <section id="corporate">
-    <div class="section-header reveal">
-      <div class="section-eyebrow" style="color:var(--orange);">Events</div>
-      <h2 class="section-title">Corporate <span>Events</span></h2>
-      <p class="section-desc">Conferences, product launches, award ceremonies, and AGMs — captured with professionalism.</p>
-    </div>
-    <div data-upload-gallery="works-corporate" data-gallery-label="Corporate Events"></div>
-  </section>
-
-  <div class="divider" style="margin:0 1.5rem;"></div>
-
-  <!-- PRODUCT PHOTOGRAPHY -->
-  <section id="product">
-    <div class="section-header reveal">
-      <div class="section-eyebrow" style="color:var(--cyan);">Product</div>
-      <h2 class="section-title">Product <span>Photography</span></h2>
-      <p class="section-desc">Clean, detailed product imagery for e-commerce, advertising, and editorial use.</p>
-    </div>
-    <div data-upload-gallery="works-product" data-gallery-label="Product Photography"></div>
-  </section>
-
-  <div class="divider" style="margin:0 1.5rem;"></div>
 
   <!-- LIFESTYLE & EDITORIAL -->
   <section id="lifestyle">
@@ -107,6 +74,45 @@ cat > /home/claude/portfolio/works.html << 'HTMLEOF'
     </div>
     <div data-upload-gallery="works-portraits" data-gallery-label="Portraits"></div>
   </section>
+
+  <div class="divider" style="margin:0 1.5rem;"></div>
+
+  <!-- CORPORATE EVENTS -->
+  <section id="corporate">
+    <div class="section-header reveal">
+      <div class="section-eyebrow" style="color:var(--orange);">Events</div>
+      <h2 class="section-title">Corporate <span>Events</span></h2>
+      <p class="section-desc">Conferences, product launches, award ceremonies, and AGMs — captured with professionalism.</p>
+    </div>
+    <div data-upload-gallery="works-corporate" data-gallery-label="Corporate Events"></div>
+  </section>
+
+  <div class="divider" style="margin:0 1.5rem;"></div>
+
+
+<!-- BRAND CAMPAIGNS -->
+  <section id="brand">
+    <div class="section-header reveal">
+      <div class="section-eyebrow" style="color:var(--purple-light);">Brand Work</div>
+      <h2 class="section-title">Brand <span>Campaigns</span></h2>
+      <p class="section-desc">Full campaigns for leading Bangladeshi and international brands — from concept to final delivery.</p>
+    </div>
+    <div data-upload-gallery="works-brand" data-gallery-label="Brand Campaigns"></div>
+  </section>
+
+  <!-- PRODUCT PHOTOGRAPHY -->
+  <section id="product">
+    <div class="section-header reveal">
+      <div class="section-eyebrow" style="color:var(--cyan);">Product</div>
+      <h2 class="section-title">Product <span>Photography</span></h2>
+      <p class="section-desc">Clean, detailed product imagery for e-commerce, advertising, and editorial use.</p>
+    </div>
+    <div data-upload-gallery="works-product" data-gallery-label="Product Photography"></div>
+  </section>
+
+  <div class="divider" style="margin:0 1.5rem;"></div>
+
+  
 
   <!-- SERVICES STRIP -->
   <section style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:3rem 1.5rem;">
