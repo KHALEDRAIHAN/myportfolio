@@ -51,12 +51,34 @@
     s.id = 'kmr-styles';
     s.textContent = `
       /* Admin trigger (floating lock icon) */
-      .kmr-trigger{position:fixed;bottom:1.5rem;right:1.5rem;z-index:8000;width:40px;height:40px;
+      /*.kmr-trigger{position:fixed;bottom:1.5rem;right:1.5rem;z-index:8000;width:40px;height:40px;
         border-radius:50%;background:rgba(13,13,26,.9);border:1px solid rgba(124,58,237,.25);
         color:rgba(255,255,255,.25);font-size:.95rem;cursor:pointer;display:flex;
         align-items:center;justify-content:center;transition:all .3s;backdrop-filter:blur(10px);}
       .kmr-trigger:hover{border-color:#7c3aed;color:#7c3aed;box-shadow:0 0 20px rgba(124,58,237,.3);}
-      .kmr-trigger.active{background:#7c3aed;color:#fff;border-color:transparent;box-shadow:0 0 24px rgba(124,58,237,.5);}
+      .kmr-trigger.active{background:#7c3aed;color:#fff;border-color:transparent;box-shadow:0 0 24px rgba(124,58,237,.5);}*/
+      /* Look for this specific block inside the injectCSS function */
+
+      /* Admin trigger (floating lock icon) */
+      .kmr-trigger{
+        position:fixed;
+        bottom: 5.5rem;   /* Change this from 1.5rem to 5.5rem */
+        right:1.5rem;
+        z-index:8000;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background:rgba(13,13,26,.9);
+        border:1px solid rgba(124,58,237,.25);
+        color:rgba(255,255,255,.25);
+        font-size:.95rem;
+        cursor:pointer;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition:all .3s;
+        backdrop-filter:blur(10px);
+      }
 
       /* Login modal */
       .kmr-login{position:fixed;inset:0;z-index:99997;background:rgba(5,5,11,.97);
@@ -504,8 +526,23 @@
   // ── Init ──────────────────────────────────────────────────
   function init() {
     injectCSS();
-    injectTrigger();
-    if (isAdmin()) injectBanner();
+
+    // Check if the current filename is works.html
+    const isWorksPage = window.location.pathname.includes('works.html');
+    
+    // Only show the 🔒 lock icon if we are on the Works page
+    if (isWorksPage) {
+      injectTrigger();
+    }
+
+    // Always show the admin banner if already logged in
+    // This ensures you can still see management tools and LOG OUT 
+    // regardless of which page you navigate to.
+    if (isAdmin()) {
+      injectBanner();
+    }
+
+    // Still build the galleries so visitors can see your photos on all pages
     document.querySelectorAll('[data-upload-gallery]').forEach(build);
   }
   if (document.readyState==='loading') document.addEventListener('DOMContentLoaded',init);
