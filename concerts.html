@@ -1,3 +1,4 @@
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,14 +45,32 @@
   <!-- Artist quick-jump sidebar -->
   <div style="position:fixed;bottom:6.5rem;left:.75rem;z-index:500;display:flex;flex-direction:column;gap:.35rem;" id="artistJump">
     <div style="font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);padding:0 .25rem;margin-bottom:.1rem;">Jump to</div>
-    <a href="#artcell" style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.3);color:var(--text);">Artcell</a>
-    <a href="#tahsan"  style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.2);color:var(--text);">Tahsan</a>
     <a href="#rahat"   style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(249,115,22,.1);border:1px solid rgba(249,115,22,.2);color:var(--text);">Rahat</a>
+    <a href="#tahsan"  style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.2);color:var(--text);">Tahsan</a>
+    <a href="#artcell" style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.3);color:var(--text);">Artcell</a>
     <a href="#miles"   style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(168,85,247,.1);border:1px solid rgba(168,85,247,.2);color:var(--text);">Miles</a>
     <a href="#warfaze" style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.2);color:var(--text);">Warfaze</a>
     <a href="#fuad"    style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.2);color:var(--text);">Fuad</a>
     <a href="#other"   style="font-size:.62rem;letter-spacing:.08em;padding:.28rem .6rem;border-radius:3px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);color:var(--muted);">Other</a>
   </div>
+
+<!-- RAHAT FATEH ALI KHAN -->
+  <section id="rahat" style="scroll-margin-top:70px;">
+    <div class="section-header reveal">
+      <div class="section-eyebrow" style="color:var(--orange);">Classical / Sufi</div>
+      <h2 class="section-title">Rahat Fateh Ali Khan</h2>
+      <p class="section-desc">A legendary performance in Dhaka — raw devotion and spiritual energy, frame by frame.</p>
+    </div>
+    <div class="artist-banner reveal" style="position:relative;border-radius:8px;overflow:hidden;aspect-ratio:21/5;margin-bottom:2rem;border:1px solid var(--border);">
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%,rgba(249,115,22,.55) 0%,transparent 60%),linear-gradient(135deg,#180b00,#2e1500);"></div>
+      <div style="position:relative;z-index:2;padding:1.5rem 2rem;height:100%;display:flex;align-items:center;">
+        <div><p style="font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);margin-bottom:.25rem;">Featured Artist</p>
+        <h3 style="font-family:var(--font-display);font-size:clamp(1.5rem,5vw,3rem);letter-spacing:.04em;">RAHAT FATEH ALI KHAN</h3>
+        <p style="font-size:.78rem;color:var(--muted);">Classical · Sufi · Qawwali</p></div>
+      </div>
+    </div>
+    <div data-upload-gallery="rahat" data-gallery-label="Rahat Fateh Ali Khan"></div>
+  </section>
 
   <!-- ARTCELL -->
   <section id="artcell" style="scroll-margin-top:70px;">
@@ -93,23 +112,7 @@
 
   <div class="divider" style="margin:0 1.5rem;"></div>
 
-  <!-- RAHAT FATEH ALI KHAN -->
-  <section id="rahat" style="scroll-margin-top:70px;">
-    <div class="section-header reveal">
-      <div class="section-eyebrow" style="color:var(--orange);">Classical / Sufi</div>
-      <h2 class="section-title">Rahat Fateh Ali Khan</h2>
-      <p class="section-desc">A legendary performance in Dhaka — raw devotion and spiritual energy, frame by frame.</p>
-    </div>
-    <div class="artist-banner reveal" style="position:relative;border-radius:8px;overflow:hidden;aspect-ratio:21/5;margin-bottom:2rem;border:1px solid var(--border);">
-      <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%,rgba(249,115,22,.55) 0%,transparent 60%),linear-gradient(135deg,#180b00,#2e1500);"></div>
-      <div style="position:relative;z-index:2;padding:1.5rem 2rem;height:100%;display:flex;align-items:center;">
-        <div><p style="font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);margin-bottom:.25rem;">Featured Artist</p>
-        <h3 style="font-family:var(--font-display);font-size:clamp(1.5rem,5vw,3rem);letter-spacing:.04em;">RAHAT FATEH ALI KHAN</h3>
-        <p style="font-size:.78rem;color:var(--muted);">Classical · Sufi · Qawwali</p></div>
-      </div>
-    </div>
-    <div data-upload-gallery="rahat" data-gallery-label="Rahat Fateh Ali Khan"></div>
-  </section>
+  
 
   <div class="divider" style="margin:0 1.5rem;"></div>
 
@@ -213,7 +216,7 @@
     <div class="lightbox-caption"></div>
   </div>
 
-  <a href="https://wa.me/8801XXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener">
+  <a href="https://wa.me/8801829834501" class="whatsapp-float" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
