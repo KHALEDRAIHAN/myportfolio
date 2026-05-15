@@ -113,9 +113,9 @@
 
   /* ── Config check ─────────────────────────────────────── */
   function isConfigured() {
-    return CLOUD_NAME    !== 'dxskk2i6r' &&
-           UPLOAD_PRESET !== 'kmr_preset' &&
-           FIREBASE_URL  !== 'https://realtime-database-ce5dd-default-rtdb.firebaseio.com/';
+    return CLOUD_NAME    !== 'YOUR_CLOUD_NAME' &&
+           UPLOAD_PRESET !== 'YOUR_UPLOAD_PRESET' &&
+           FIREBASE_URL  !== 'YOUR_FIREBASE_URL';
   }
 
   /* ── Utils ────────────────────────────────────────────── */
