@@ -1,143 +1,206 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cinematography – Khaled Md Raihan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cinematography — Khaled Md Raihan</title>
   <meta name="description" content="Cinematic films, music videos, commercial reels and event highlights by Khaled Md Raihan.">
-  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
+
+  <!-- NAV -->
   <nav class="navbar" id="navbar">
-    <a href="index.html" class="nav-brand">KMR</a>
+    <a href="index.html" class="nav-brand">Khaled <em>Md Raihan</em></a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li><li><a href="concerts.html">Concert</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="concerts.html">Concert</a></li>
       <li><a href="cinematography.html" class="active">Cinematography</a></li>
-      <li><a href="works.html">Works</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
+      <li><a href="works.html">Works</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    <div class="nav-right">
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
   </nav>
   <nav class="mobile-menu" id="mobileMenu">
-    <a href="index.html">Home</a><a href="concerts.html">Concert</a>
-    <a href="cinematography.html" class="active">Cinematography</a>
-    <a href="works.html">Works</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+    <div class="mobile-menu-links">
+      <a href="index.html"><small>01</small>Home</a>
+      <a href="concerts.html"><small>02</small>Concert</a>
+      <a href="cinematography.html" class="active"><small>03</small>Cinematography</a>
+      <a href="works.html"><small>04</small>Works</a>
+      <a href="about.html"><small>05</small>About</a>
+      <a href="contact.html"><small>06</small>Contact</a>
+    </div>
+    <div class="mobile-menu-foot">
+      <a href="mailto:khaledraihan813@gmail.com">khaledraihan813@gmail.com</a>
+      <a href="tel:+8801829834501">+880 1829 834501</a>
+    </div>
   </nav>
 
-  <div class="page-hero">
-    <div class="page-hero-bg" style="background:radial-gradient(ellipse at 70% 50%,rgba(34,211,238,.3) 0%,transparent 60%),radial-gradient(ellipse at 20% 70%,rgba(124,58,237,.3) 0%,transparent 55%),#05050b;"></div>
-    <div class="page-hero-overlay"></div>
-    <div class="page-hero-content">
-      <div class="section-eyebrow">Motion Picture</div>
-      <h1 class="section-title"><span>Cinemato</span>graphy</h1>
-      <p style="color:var(--muted);font-size:.92rem;max-width:560px;margin-top:.75rem;line-height:1.8;">Short films, music videos, commercial reels, and event highlights — crafted with cinematic vision and purposeful storytelling.</p>
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <p class="eyebrow"><span>Motion picture</span>Films · Music videos · Reels</p>
+      <h1 class="page-title">Cinema<em>tography</em></h1>
+      <p class="lead">Short films, music videos, commercial reels and event highlights — crafted with cinematic vision and purposeful storytelling.</p>
     </div>
-  </div>
+  </header>
 
   <!-- VIDEO PROJECTS -->
   <section>
-    <div class="section-header reveal">
-      <div class="section-eyebrow">Reel Work</div>
-      <h2 class="section-title">Video <span>Projects</span></h2>
-      <p class="section-desc">Each project below has its own thumbnail/stills gallery. Add video links in the caption field.</p>
-    </div>
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow"><span>Reel work</span></p>
+          <h2 class="title">Video <em>projects</em></h2>
+        </div>
+        <p class="lead">Selected films and videos. Click any project to watch.</p>
+      </div>
 
-    <div class="video-grid" style="margin-bottom:3rem;">
-      <div class="video-card reveal" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-type="youtube">
-        <div class="video-thumb" style="background:radial-gradient(ellipse at 40% 60%,rgba(124,58,237,.5) 0%,transparent 60%),linear-gradient(135deg,#0d0520,#1a0535);"></div>
-        <div class="video-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        <div class="video-info"><p class="video-category">Short Film</p><h3 class="video-title">Ektu Alo</h3><p class="video-duration">12:34 · 2024</p></div>
-      </div>
-      <div class="video-card reveal reveal-delay-1" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-type="youtube">
-        <div class="video-thumb" style="background:radial-gradient(ellipse at 60% 40%,rgba(34,211,238,.4) 0%,transparent 55%),linear-gradient(135deg,#041520,#0a2a3e);"></div>
-        <div class="video-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        <div class="video-info"><p class="video-category">Music Video</p><h3 class="video-title">Kothay Jao</h3><p class="video-duration">4:21 · Tahsan · 2024</p></div>
-      </div>
-      <div class="video-card reveal reveal-delay-2" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-type="youtube">
-        <div class="video-thumb" style="background:radial-gradient(ellipse at 50% 50%,rgba(249,115,22,.4) 0%,transparent 55%),linear-gradient(135deg,#180b00,#2e1500);"></div>
-        <div class="video-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        <div class="video-info"><p class="video-category">Commercial</p><h3 class="video-title">Robi Brand Film</h3><p class="video-duration">1:30 · 2023</p></div>
-      </div>
-      <div class="video-card reveal" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-type="youtube">
-        <div class="video-thumb" style="background:radial-gradient(ellipse at 40% 40%,rgba(168,85,247,.5) 0%,transparent 55%),linear-gradient(135deg,#0d0520,#041520);"></div>
-        <div class="video-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        <div class="video-info"><p class="video-category">Event Highlight</p><h3 class="video-title">Dhaka Music Fest</h3><p class="video-duration">6:45 · 2024</p></div>
-      </div>
-      <div class="video-card reveal reveal-delay-1" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-type="youtube">
-        <div class="video-thumb" style="background:radial-gradient(ellipse at 50% 50%,rgba(74,222,128,.3) 0%,transparent 55%),linear-gradient(135deg,#050e08,#0a1e0f);"></div>
-        <div class="video-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        <div class="video-info"><p class="video-category">Short Film</p><h3 class="video-title">Shesher Shomoy</h3><p class="video-duration">18:12 · 2023</p></div>
-      </div>
-      <div class="video-card reveal reveal-delay-2" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-type="youtube">
-        <div class="video-thumb" style="background:radial-gradient(ellipse at 30% 60%,rgba(239,68,68,.4) 0%,transparent 55%),linear-gradient(135deg,#0d0505,#1a0a0a);"></div>
-        <div class="video-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        <div class="video-info"><p class="video-category">Music Video</p><h3 class="video-title">Nishshabde</h3><p class="video-duration">3:58 · Artcell · 2024</p></div>
+      <div class="video-grid reveal">
+        <div class="video-card" data-video="https://www.facebook.com/reel/1035409862369034/" data-video-type="facebook" data-orientation="portrait">
+          <div class="video-thumb"></div>
+          <div class="video-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <div class="video-info"><p class="video-category">Club film</p><h3 class="video-title">Tale of the Darkroom</h3><p class="video-duration">AIUB Photography Club</p></div>
+        </div>
+        <div class="video-card" data-video="https://www.facebook.com/reel/1502412047851889/" data-video-type="facebook" data-orientation="portrait">
+          <div class="video-thumb"></div>
+          <div class="video-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <div class="video-info"><p class="video-category">Event recap</p><h3 class="video-title">AIUBPC Viva Day</h3><p class="video-duration">AIUB Photography Club · Spring 24-25</p></div>
+        </div>
+        <div class="video-card" data-video="https://www.facebook.com/reel/866133989719953/" data-video-type="facebook" data-orientation="portrait">
+          <div class="video-thumb"></div>
+          <div class="video-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <div class="video-info"><p class="video-category">Corporate event</p><h3 class="video-title">Biobuild Family Day</h3><p class="video-duration">Biobuild Development Ltd · 2025</p></div>
+        </div>
+        <div class="video-card" data-video="https://www.facebook.com/reel/1173082497974798/" data-video-type="facebook" data-orientation="portrait">
+          <div class="video-thumb"></div>
+          <div class="video-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <div class="video-info"><p class="video-category">Corporate event</p><h3 class="video-title">Biobuild Abashon Mela</h3><p class="video-duration">Biobuild Development Ltd · 2025</p></div>
+        </div>
+        <div class="video-card" data-video="https://www.facebook.com/reel/492866723624609/" data-video-type="facebook" data-orientation="portrait">
+          <div class="video-thumb"></div>
+          <div class="video-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <div class="video-info"><p class="video-category">Corporate event</p><h3 class="video-title">Mariners' Night</h3><p class="video-duration">Biobuild Development Ltd · 2024</p></div>
+        </div>
+        <div class="video-card" data-video="https://www.facebook.com/reel/24791534483860098/" data-video-type="facebook" data-orientation="portrait">
+          <div class="video-thumb"></div>
+          <div class="video-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <div class="video-info"><p class="video-category">Corporate</p><h3 class="video-title">Biobuild — Message</h3><p class="video-duration">Biobuild Development Ltd · 2025</p></div>
+        </div>
+        <div class="video-card" data-video="https://www.facebook.com/reel/1462655908136985/" data-video-type="facebook" data-orientation="portrait">
+          <div class="video-thumb"></div>
+          <div class="video-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <div class="video-info"><p class="video-category">Event highlight</p><h3 class="video-title">BSE Art Competition</h3><p class="video-duration">Bangladesh School of Excellence · 2025</p></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="divider" style="margin:0 1.5rem;"></div>
-
-  <!-- BTS STILLS UPLOAD -->
-  <section>
-    <div class="section-header reveal">
-      <div class="section-eyebrow">Behind the Lens</div>
-      <h2 class="section-title">Behind the <span>Scenes</span></h2>
-      <p class="section-desc">On-set stills, production photos, and BTS moments from film and video projects.</p>
+  <!-- BEHIND THE SCENES -->
+  <section class="section-line">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow"><span>Behind the lens</span></p>
+          <h2 class="title">Behind the <em>scenes</em></h2>
+        </div>
+        <p class="lead">On-set stills, production photos and BTS moments from film and video projects.</p>
+      </div>
+      <div class="reveal" data-upload-gallery="cine-bts" data-gallery-label="Behind the Scenes"></div>
     </div>
-    <div data-upload-gallery="cine-bts" data-gallery-label="Behind the Scenes"></div>
   </section>
 
-  <div class="divider" style="margin:0 1.5rem;"></div>
-
-  <!-- STILLS FROM FILMS -->
-  <section>
-    <div class="section-header reveal">
-      <div class="section-eyebrow">Film Stills</div>
-      <h2 class="section-title">Cinematic <span>Stills</span></h2>
-      <p class="section-desc">Frame grabs and production stills from short films, music videos, and commercial reels.</p>
+  <!-- FILM STILLS -->
+  <section class="section-line section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow"><span>Film stills</span></p>
+          <h2 class="title">Cinematic <em>stills</em></h2>
+        </div>
+        <p class="lead">Frame grabs and production stills from short films, music videos and commercial reels.</p>
+      </div>
+      <div class="reveal" data-upload-gallery="cine-stills" data-gallery-label="Film Stills"></div>
     </div>
-    <div data-upload-gallery="cine-stills" data-gallery-label="Film Stills"></div>
   </section>
 
   <!-- SHOWREEL CTA -->
-  <section style="text-align:center;padding-top:2rem;">
-    <div class="reveal" style="max-width:600px;margin:0 auto;">
-      <div class="section-eyebrow" style="justify-content:center;">2024 Showreel</div>
-      <h2 class="section-title" style="margin-bottom:1.25rem;">Watch the <span>Full Reel</span></h2>
-      <p class="section-desc" style="margin:0 auto 2rem;">Two minutes. Every discipline. This is what I do.</p>
-      <button class="btn btn-cyan" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-type="youtube" style="font-size:.85rem;padding:1rem 2.5rem;">▶ Play Showreel</button>
+  <section class="cta-section">
+    <div class="container">
+      <p class="eyebrow reveal"><span>Showreel</span></p>
+      <h2 class="cta-title reveal">Watch the <em>full reel</em></h2>
+      <p class="lead reveal">Two minutes. Every discipline. This is what I do.</p>
+      <div class="cta-actions reveal">
+        <a class="btn btn-solid" href="https://www.youtube.com/@khaledmdraihan" target="_blank" rel="noopener">▶&nbsp; Watch on YouTube</a>
+        <a href="contact.html" class="btn">Start a project</a>
+      </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <div class="footer-top">
-      <div class="footer-brand"><div class="nav-brand">KMR</div><p>Cinematic storytelling through motion and light.</p></div>
-      <div class="footer-links"><h4>Navigation</h4><ul>
-        <li><a href="index.html">Home</a></li><li><a href="concerts.html">Concert</a></li>
-        <li><a href="cinematography.html">Cinematography</a></li><li><a href="works.html">Works</a></li>
-        <li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
-      </ul></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand">Khaled <em>Md Raihan</em></a>
+          <p>Cinematic storytelling through motion and light.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="concerts.html">Concert</a></li>
+            <li><a href="cinematography.html">Cinematography</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:khaledraihan813@gmail.com">khaledraihan813@gmail.com</a></li>
+            <li><a href="tel:+8801829834501">+880 1829 834501</a></li>
+            <li><a href="https://www.instagram.com/raihan_llb" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/share/19mPXgLu1z/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://www.youtube.com/@khaledmdraihan" target="_blank" rel="noopener">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> <span>Khaled Md Raihan</span>. All rights reserved.</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
-    <div class="footer-bottom"><p>© 2025 <span>Khaled Md Raihan</span>. All rights reserved.</p></div>
   </footer>
 
+  <!-- LIGHTBOXES -->
   <div class="lightbox" id="lightbox">
-    <button class="lightbox-close">✕</button>
-    <button class="lightbox-nav lightbox-prev">‹</button>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous">←</button>
     <div class="lightbox-content"><img class="lightbox-img" src="" alt=""></div>
-    <button class="lightbox-nav lightbox-next">›</button>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next">→</button>
     <div class="lightbox-caption"></div>
   </div>
   <div class="lightbox" id="videoLightbox">
-    <button class="lightbox-close">✕</button>
+    <button class="lightbox-close" aria-label="Close">✕</button>
     <div class="video-lightbox-inner"></div>
   </div>
-  <a href="https://wa.me/8801XXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+  <a href="https://wa.me/8801829834501" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="gallery-upload.js"></script>
 </body>
 </html>
